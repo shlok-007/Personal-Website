@@ -1,5 +1,5 @@
-html {
-    font-size: 2vw;
+main {
+
     margin-right: 2vw;
     margin-left: 2vw;
 }
@@ -18,6 +18,14 @@ body {
     width: 100%;
     padding-bottom: 4vh;
     background-image: linear-gradient(black, transparent) !important;
+}
+
+.logo img{
+    transition: 0.5s;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
 }
 
 header {
@@ -157,8 +165,12 @@ nav a:hover {
 
     .proh {
         margin-top: 4vh !important;
-        text-align: center !important;
         margin-bottom: 1vh !important;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        text-align: center !important;
+        justify-content: center;
     }
 
     .carousel-cell {
@@ -350,10 +362,13 @@ a:hover {
 .proh {
     color: lightgray;
     font-size: max(25px, 2.5vw);
-    ;
     text-align: left;
     margin-bottom: 2vh;
     margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    font-weight: bold;
 }
 
 .prod {
@@ -364,14 +379,15 @@ a:hover {
     font-size: max(18px, 2vw);
 }
 
-.proh a{
+.proh a {
     text-decoration: none;
 }
-.proh a img{
+
+.proh a img {
     transition: 0.2s;
 }
 
-.proh a img:hover{
+.proh a img:hover {
     transform: scale(1.2);
 }
 
@@ -409,4 +425,9 @@ footer:hover {
 #gl {
     text-align: center;
     margin-top: 2vh;
+}
+
+@media all and (max-width: 855px) and (orientation:landscape){
+
+#flt{float: right;}
 }
